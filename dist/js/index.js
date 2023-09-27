@@ -1,15 +1,21 @@
 // Hmburger
 const primaryNav = document.querySelector(".primary-navigation");
 const navToggle = document.querySelector(".moblie-nav-toggle");
+const hamburgerXIcon = document.querySelector(".hamburger-X-icon");
+const hamburgerIcon = document.querySelector(".hamburger-icon");
 
 navToggle.addEventListener("click", () => {
   const visibility = primaryNav.getAttribute("data-visible");
   if (visibility === "false") {
     primaryNav.setAttribute("data-visible", true);
     navToggle.setAttribute("aria-expanded", true);
+    hamburgerXIcon.classList.remove("hidden");
+    hamburgerIcon.classList.add("hidden");
   } else if (visibility === "true") {
     primaryNav.setAttribute("data-visible", false);
     navToggle.setAttribute("aria-expanded", false);
+    hamburgerXIcon.classList.add("hidden");
+    hamburgerIcon.classList.remove("hidden");
   }
 });
 
