@@ -1325,7 +1325,7 @@ header {
     left: 450px !important;
   }
 }
-@media (max-width: 25rem) {
+@media (max-width: 375px) {
   .newNav {
     margin: 0 !important;
     padding: 0 !important;
@@ -1369,6 +1369,11 @@ header {
     height: auto !important;
     padding: auto !important;
   }
+  .tokenomics {
+    /* border: 1px solid red; */
+    height: fit-content !important;
+  }
+
   .socials-sec {
     height: fit-content !important;
   }

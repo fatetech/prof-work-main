@@ -429,15 +429,15 @@
 
         var options = {
           title: "Baby Bull",
-          pieHole: 0.4,
-          chartArea: { width: "80%", height: "80%" },
+          pieHole: 0.3,
+          chartArea: { width: "79%", height: "50%" },
           backgroundColor: "",
           colorTable: "white",
           pieSliceText: "percentage",
           titleTextStyle: {
             color: "#678f0b", // Set the title text color here
             fontName: "conthrax", // Set the font name
-            fontSize: 20,
+            fontSize: 15,
           },
           legend: "block",
           pieSliceTextStyle: {
@@ -445,12 +445,12 @@
           },
           legendTextStyle: {
             fontName: "Poppins", // Set the font name
-            fontSize: 13, // Set the font size (in pixels)
+            fontSize: 12, // Set the font size (in pixels)
             bold: false, // Make the text bold
             italic: false, // Make the text italic
             color: "#678f0b", // Set the font color to blue
           },
-          legend: { position: "left" },
+          legend: { position: "left", displayDirection:"column" },
         };
 
         var chart = new google.visualization.PieChart(
