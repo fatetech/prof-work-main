@@ -113,5 +113,7 @@ for (var i = 0; i < Navlinks.length; i++) {
   Navlinks[i].addEventListener("click", () => {
     primaryNav.setAttribute("data-visible", false);
     navToggle.setAttribute("aria-expanded", false);
+    hamburgerXIcon.classList.add("hidden");
+    hamburgerIcon.classList.remove("hidden");
   });
 }
