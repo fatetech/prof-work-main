@@ -1322,7 +1322,21 @@ header {
 
 @media (max-width: 525px) {
   .arow-up {
-    left: 450px !important;
+    left: 400px !important;
+  }
+}
+@media (max-width: 460px) {
+  .arow-up {
+    left: 350px !important;
+  }
+@media (max-width: 410px) {
+  .arow-up {
+    left: 300px !important;
+  }
+}
+@media (max-width: 380px) {
+  .arow-up {
+    left: 250px !important;
   }
 }
 @media (max-width: 375px) {
@@ -1391,8 +1405,8 @@ header {
   }
   .arow-up {
     /* top: 550px; */
-    left: 310px !important;
-    top: 690px;
+    left: 320px !important;
+    top: 590px;
     font-size: 15px;
     /* z-index: 999;
     color: #adf802;
